@@ -1,30 +1,30 @@
 # Gold Recovery Prediction using Machine Learning
 
-## Descripción del proyecto
+## Project Description
 
-Este proyecto desarrolla una solución de Machine Learning para predecir la recuperación de oro en un proceso industrial de extracción minera.
+This project develops a Machine Learning solution to predict gold recovery in an industrial mining extraction process.
 
-La compañía Zyfra busca optimizar la producción mediante modelos predictivos capaces de estimar la eficiencia de recuperación del oro en distintas etapas del proceso de refinamiento. Para ello, se utilizaron datos reales provenientes de sensores y variables operativas de una planta minera.
+Zyfra aims to optimize production through predictive models capable of estimating gold recovery efficiency at different stages of the refining process. To achieve this, real-world data collected from sensors and operational variables within a mining plant were used.
 
-El proyecto incluye limpieza de datos, análisis exploratorio, ingeniería de características, entrenamiento de modelos y evaluación mediante una métrica personalizada basada en sMAPE.
+The project includes data cleaning, exploratory data analysis, feature engineering, model training, and evaluation using a custom metric based on sMAPE.
 
-## Objetivo
+## Objective
 
-Construir un modelo capaz de predecir con precisión la recuperación de oro durante las etapas de procesamiento y concentración, permitiendo mejorar la toma de decisiones operativas y optimizar la eficiencia productiva.
+Build a model capable of accurately predicting gold recovery during the processing and concentration stages, enabling better operational decision-making and improving production efficiency.
 
-## Datos
+## Dataset
 
-Los datos contienen información sobre diferentes etapas del proceso de extracción minera, incluyendo:
+The dataset contains information from different stages of the mining extraction process, including:
 
-- Parámetros de flotación.
-- Concentraciones de metales.
-- Variables operativas del proceso.
-- Mediciones de recuperación de oro.
-- Variables de entrada y salida en distintas fases de producción.
+- Flotation parameters.
+- Metal concentrations.
+- Process operational variables.
+- Gold recovery measurements.
+- Input and output variables from different production stages.
 
-Se trabajó con conjuntos de entrenamiento y prueba proporcionados por la empresa.
+The project uses separate training and testing datasets provided by the company.
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - Python
 - Pandas
@@ -35,81 +35,81 @@ Se trabajó con conjuntos de entrenamiento y prueba proporcionados por la empres
 - SciPy
 - Jupyter Notebook
 
-## Metodología
+## Methodology
 
-### 1. Preparación de los datos
+### 1. Data Preparation
 
-- Inspección inicial de datasets.
-- Tratamiento de valores ausentes.
-- Eliminación de variables no disponibles en producción.
-- Verificación de consistencia de datos.
-- Alineación de conjuntos de entrenamiento y prueba.
+- Initial dataset inspection.
+- Missing value treatment.
+- Removal of variables unavailable during production.
+- Data consistency verification.
+- Alignment of training and testing datasets.
 
-### 2. Análisis exploratorio
+### 2. Exploratory Data Analysis
 
-Se analizaron:
+The following analyses were performed:
 
-- Distribuciones de variables clave.
-- Concentraciones de metales en distintas etapas.
-- Comportamiento de las recuperaciones.
-- Valores atípicos y observaciones anómalas.
+- Distribution of key variables.
+- Metal concentrations across different processing stages.
+- Gold recovery behavior.
+- Outlier detection and anomalous observations.
 
-### 3. Ingeniería de características
+### 3. Feature Engineering
 
-- Selección de variables relevantes.
-- Eliminación de columnas redundantes.
-- Preparación de variables objetivo.
-- Construcción de conjuntos finales de entrenamiento.
+- Selection of relevant features.
+- Removal of redundant columns.
+- Preparation of target variables.
+- Construction of the final training datasets.
 
-### 4. Entrenamiento de modelos
+### 4. Model Training
 
-Se evaluaron diferentes algoritmos de regresión:
+Several regression algorithms were evaluated:
 
 - Linear Regression
 - Decision Tree Regressor
 - Random Forest Regressor
 
-Los modelos fueron comparados mediante validación cruzada.
+The models were compared using cross-validation.
 
-### 5. Evaluación
+### 5. Model Evaluation
 
-La métrica principal utilizada fue:
+The primary evaluation metric was:
 
 **sMAPE (Symmetric Mean Absolute Percentage Error)**
 
-Esta métrica permite medir el error porcentual de las predicciones considerando tanto valores altos como bajos de manera equilibrada.
+This metric measures the percentage prediction error while giving balanced importance to both high and low values.
 
-Además, se implementó la métrica final utilizada por Zyfra para evaluar simultáneamente ambas etapas del proceso de recuperación.
+Additionally, the final evaluation metric used by Zyfra was implemented to simultaneously assess both stages of the gold recovery process.
 
-## Resultados
+## Results
 
-Los modelos basados en árboles mostraron un mejor desempeño que la regresión lineal tradicional.
+Tree-based models achieved better performance than traditional linear regression.
 
-Tras la optimización de hiperparámetros y validación cruzada, se seleccionó el modelo con menor valor de sMAPE para su evaluación final.
+After hyperparameter optimization and cross-validation, the model with the lowest sMAPE score was selected for the final evaluation.
 
-Los resultados obtenidos demostraron que el modelo es capaz de capturar patrones relevantes del proceso industrial y producir estimaciones útiles para la operación minera.
+The results demonstrate that the selected model is capable of capturing meaningful patterns in the industrial process and generating useful predictions for mining operations.
 
-## Conclusiones
+## Conclusions
 
-- Fue posible construir un modelo predictivo para estimar la recuperación de oro en distintas etapas del proceso.
-- El análisis exploratorio permitió detectar inconsistencias y variables críticas para la predicción.
-- Los modelos de Machine Learning superaron los enfoques base utilizados como referencia.
-- La métrica sMAPE permitió evaluar adecuadamente la calidad de las predicciones en un contexto industrial.
-- El modelo seleccionado puede utilizarse como herramienta de apoyo para optimizar procesos de recuperación minera.
+- A predictive model was successfully developed to estimate gold recovery at different stages of the industrial process.
+- Exploratory data analysis identified inconsistencies and critical variables for prediction.
+- Machine Learning models outperformed the baseline approaches used for comparison.
+- The sMAPE metric proved effective for evaluating prediction quality in an industrial environment.
+- The selected model can serve as a decision-support tool for optimizing mining recovery processes.
 
-## Habilidades demostradas
+## Skills Demonstrated
 
-- Limpieza y preparación de datos industriales.
-- Análisis exploratorio de datos.
-- Ingeniería de características.
-- Modelado supervisado de regresión.
-- Validación cruzada.
-- Optimización de hiperparámetros.
-- Implementación de métricas personalizadas.
-- Evaluación de modelos de Machine Learning.
-- Comunicación de resultados técnicos y de negocio.
+- Industrial data cleaning and preprocessing.
+- Exploratory Data Analysis (EDA).
+- Feature engineering.
+- Supervised regression modeling.
+- Cross-validation.
+- Hyperparameter optimization.
+- Custom metric implementation.
+- Machine Learning model evaluation.
+- Technical and business results communication.
 
-## Estructura del repositorio
+## Repository Structure
 
 ```text
 gold-recovery-prediction-ml/
@@ -126,7 +126,7 @@ gold-recovery-prediction-ml/
 └── requirements.txt
 ```
 
-## Autor
+## Author
 
 **Alejandro Cotes**  
 Data Science Student | Machine Learning | Analytics
